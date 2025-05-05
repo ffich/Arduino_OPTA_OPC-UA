@@ -1,0 +1,732 @@
+[
+    {
+        "id": "b95c86e74dc9406f",
+        "type": "tab",
+        "label": "OPC-UA",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a59f375690802a42",
+        "type": "group",
+        "z": "b95c86e74dc9406f",
+        "name": "",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c263a3a56c11f124",
+            "34bd45f333eab18a",
+            "0159ff1ef70e89d0",
+            "0aa25d33b342dc12"
+        ],
+        "x": 34,
+        "y": 559,
+        "w": 672,
+        "h": 109.5
+    },
+    {
+        "id": "342ae34d18db20b0",
+        "type": "group",
+        "z": "b95c86e74dc9406f",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "596388f0f9e091d7",
+            "fdaace6d400fbf2f",
+            "f0bd180120ee3da5",
+            "ba4e2ae132449f6a",
+            "74ee90883bd52478",
+            "47953c967cba1a58"
+        ],
+        "x": 34,
+        "y": 379,
+        "w": 912,
+        "h": 149.5
+    },
+    {
+        "id": "05eff83989f131ef",
+        "type": "group",
+        "z": "b95c86e74dc9406f",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8670d0d7b6e4b283",
+            "e3f59a3f940bde16",
+            "4f1fece8263783c6",
+            "72a6f1e340bd6e70",
+            "5cdf81538e141392",
+            "4eee15670b45ec36",
+            "6c5d4087a7fa0d95",
+            "93c85f3170000e84",
+            "b32795b75ab20e14",
+            "f0394a7ea192fd2c",
+            "1971a4ae7cc767cf"
+        ],
+        "x": 34,
+        "y": 31.5,
+        "w": 652,
+        "h": 329.5
+    },
+    {
+        "id": "8670d0d7b6e4b283",
+        "type": "OpcUa-Item",
+        "z": "b95c86e74dc9406f",
+        "g": "05eff83989f131ef",
+        "item": "ns=0;i=50077.R1",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "R1",
+        "x": 290,
+        "y": 80,
+        "wires": [
+            [
+                "e3f59a3f940bde16"
+            ]
+        ]
+    },
+    {
+        "id": "e3f59a3f940bde16",
+        "type": "OpcUa-Client",
+        "z": "b95c86e74dc9406f",
+        "g": "05eff83989f131ef",
+        "endpoint": "fd11cd9b5d90099e",
+        "action": "write",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": true,
+        "name": "",
+        "x": 580,
+        "y": 80,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4f1fece8263783c6",
+        "type": "OpcUa-Item",
+        "z": "b95c86e74dc9406f",
+        "g": "05eff83989f131ef",
+        "item": "ns=0;i=50078.R2",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "R2",
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "e3f59a3f940bde16"
+            ]
+        ]
+    },
+    {
+        "id": "72a6f1e340bd6e70",
+        "type": "OpcUa-Item",
+        "z": "b95c86e74dc9406f",
+        "g": "05eff83989f131ef",
+        "item": "ns=0;i=50079.R3",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "R3",
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "e3f59a3f940bde16"
+            ]
+        ]
+    },
+    {
+        "id": "5cdf81538e141392",
+        "type": "OpcUa-Item",
+        "z": "b95c86e74dc9406f",
+        "g": "05eff83989f131ef",
+        "item": "ns=0;i=50080.R4",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "R4",
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "e3f59a3f940bde16"
+            ]
+        ]
+    },
+    {
+        "id": "4eee15670b45ec36",
+        "type": "ui_switch",
+        "z": "b95c86e74dc9406f",
+        "g": "05eff83989f131ef",
+        "name": "",
+        "label": "Relay 1",
+        "tooltip": "",
+        "group": "85144921.8931b8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "0",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "8670d0d7b6e4b283"
+            ]
+        ]
+    },
+    {
+        "id": "6c5d4087a7fa0d95",
+        "type": "ui_switch",
+        "z": "b95c86e74dc9406f",
+        "g": "05eff83989f131ef",
+        "name": "",
+        "label": "Relay 2",
+        "tooltip": "",
+        "group": "85144921.8931b8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "0",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "4f1fece8263783c6"
+            ]
+        ]
+    },
+    {
+        "id": "93c85f3170000e84",
+        "type": "ui_switch",
+        "z": "b95c86e74dc9406f",
+        "g": "05eff83989f131ef",
+        "name": "",
+        "label": "Relay 3",
+        "tooltip": "",
+        "group": "85144921.8931b8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "0",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "72a6f1e340bd6e70"
+            ]
+        ]
+    },
+    {
+        "id": "b32795b75ab20e14",
+        "type": "ui_switch",
+        "z": "b95c86e74dc9406f",
+        "g": "05eff83989f131ef",
+        "name": "",
+        "label": "Relay 4",
+        "tooltip": "",
+        "group": "85144921.8931b8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "0",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 120,
+        "y": 260,
+        "wires": [
+            [
+                "5cdf81538e141392"
+            ]
+        ]
+    },
+    {
+        "id": "f0394a7ea192fd2c",
+        "type": "OpcUa-Item",
+        "z": "b95c86e74dc9406f",
+        "g": "05eff83989f131ef",
+        "item": "ns=0;i=50081.UL",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "UL",
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "e3f59a3f940bde16"
+            ]
+        ]
+    },
+    {
+        "id": "1971a4ae7cc767cf",
+        "type": "ui_switch",
+        "z": "b95c86e74dc9406f",
+        "g": "05eff83989f131ef",
+        "name": "",
+        "label": "User LED",
+        "tooltip": "",
+        "group": "f8b97d935f93f052",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "0",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "f0394a7ea192fd2c"
+            ]
+        ]
+    },
+    {
+        "id": "596388f0f9e091d7",
+        "type": "inject",
+        "z": "b95c86e74dc9406f",
+        "g": "342ae34d18db20b0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "0",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 140,
+        "y": 480,
+        "wires": [
+            [
+                "f0bd180120ee3da5"
+            ]
+        ]
+    },
+    {
+        "id": "fdaace6d400fbf2f",
+        "type": "OpcUa-Client",
+        "z": "b95c86e74dc9406f",
+        "g": "342ae34d18db20b0",
+        "endpoint": "fd11cd9b5d90099e",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": true,
+        "name": "",
+        "x": 460,
+        "y": 480,
+        "wires": [
+            [
+                "47953c967cba1a58"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f0bd180120ee3da5",
+        "type": "OpcUa-Item",
+        "z": "b95c86e74dc9406f",
+        "g": "342ae34d18db20b0",
+        "item": "ns=0;i=50083.Temp",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Temp",
+        "x": 290,
+        "y": 480,
+        "wires": [
+            [
+                "fdaace6d400fbf2f"
+            ]
+        ]
+    },
+    {
+        "id": "ba4e2ae132449f6a",
+        "type": "ui_gauge",
+        "z": "b95c86e74dc9406f",
+        "g": "342ae34d18db20b0",
+        "name": "",
+        "group": "ba0d483bad0227fa",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "70",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 810,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c263a3a56c11f124",
+        "type": "inject",
+        "z": "b95c86e74dc9406f",
+        "g": "a59f375690802a42",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "0",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 140,
+        "y": 620,
+        "wires": [
+            [
+                "0159ff1ef70e89d0"
+            ]
+        ]
+    },
+    {
+        "id": "34bd45f333eab18a",
+        "type": "OpcUa-Client",
+        "z": "b95c86e74dc9406f",
+        "g": "a59f375690802a42",
+        "endpoint": "fd11cd9b5d90099e",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": true,
+        "name": "",
+        "x": 460,
+        "y": 620,
+        "wires": [
+            [
+                "0aa25d33b342dc12"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0159ff1ef70e89d0",
+        "type": "OpcUa-Item",
+        "z": "b95c86e74dc9406f",
+        "g": "a59f375690802a42",
+        "item": "ns=0;i=50069.Input",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Input",
+        "x": 290,
+        "y": 620,
+        "wires": [
+            [
+                "34bd45f333eab18a"
+            ]
+        ]
+    },
+    {
+        "id": "0aa25d33b342dc12",
+        "type": "ui_led",
+        "z": "b95c86e74dc9406f",
+        "g": "a59f375690802a42",
+        "order": 0,
+        "group": "bcd73c30755604c7",
+        "width": 0,
+        "height": 0,
+        "label": "Input1",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 630,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "74ee90883bd52478",
+        "type": "ui_chart",
+        "z": "b95c86e74dc9406f",
+        "g": "342ae34d18db20b0",
+        "name": "",
+        "group": "ba0d483bad0227fa",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47953c967cba1a58",
+        "type": "function",
+        "z": "b95c86e74dc9406f",
+        "g": "342ae34d18db20b0",
+        "name": "Round",
+        "func": "msg.payload = Number(msg.payload.toFixed(2))\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 460,
+        "wires": [
+            [
+                "74ee90883bd52478",
+                "ba4e2ae132449f6a"
+            ]
+        ]
+    },
+    {
+        "id": "fd11cd9b5d90099e",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://192.168.1.42:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "85144921.8931b8",
+        "type": "ui_group",
+        "name": "OPTA Outputs",
+        "tab": "440c46c6.769ab8",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f8b97d935f93f052",
+        "type": "ui_group",
+        "name": "OPTA LED",
+        "tab": "440c46c6.769ab8",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ba0d483bad0227fa",
+        "type": "ui_group",
+        "name": "MD02 Sensor",
+        "tab": "440c46c6.769ab8",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bcd73c30755604c7",
+        "type": "ui_group",
+        "name": "OPTA Inputs",
+        "tab": "440c46c6.769ab8",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "440c46c6.769ab8",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
