@@ -110,6 +110,8 @@ void setup()
   auto const start = millis();
   for (; !Serial && (millis() - start) < 1000; ) { }
 
+  Serial.println("Starting up...");
+
 #if USE_MODBUS_SENSOR_MD02
   RS485.setDelays(MODBUS_PRE_DELAY_BR, MODBUS_POST_DELAY_BR);
   if (!ModbusRTUClient.begin(MODBUS_BAUDRATE, SERIAL_8N1))
@@ -529,8 +531,8 @@ void loop()
 
 #if USE_MODBUS_SENSOR_MD02
   if (!ModbusRTUClient.requestFrom(MODBUS_DEVICE_ID, INPUT_REGISTERS, MODBUS_DEVICE_TEMPERATURE_REGISTER, 1)) {
-    Serial.print("failed to read temperature register! ");
-    Serial.println(ModbusRTUClient.lastError());
+    //Serial.print("failed to read temperature register! ");
+    //Serial.println(ModbusRTUClient.lastError());
     return;
   }
   if (ModbusRTUClient.available())
