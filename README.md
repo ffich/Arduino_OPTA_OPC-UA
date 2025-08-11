@@ -29,9 +29,12 @@ Leveraging OPC-UA in this project allows smooth integration between **Arduino OP
 ## 📂 Repository Structure
 
 ├── opta_opcua_server/
-│ └── … Arduino sketch implementing the OPC-UA server on OPTA
+
+│ └── Arduino sketch implementing the OPC-UA server on OPTA
+
 └── node-red-opc-ua-client/
-└── … Node-RED flow implementing the client control panel
+
+└── Node-RED flow implementing the client control panel
 
 ### 🔌 `opta_opcua_server/`
 
